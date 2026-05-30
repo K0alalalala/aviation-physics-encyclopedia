@@ -678,6 +678,7 @@
       <li><a href="#chapter6">⚡ חשמל</a></li>
       <li><a href="#chapter7">🔭 אופטיקה</a></li>
       <li><a href="#chapter8">🌤️ אטמוספרה</a></li>
+      <li><a href="#chapter9">🧠 הסקה טכנית</a></li>
     </ul>
 
     <button class="hamburger" id="hamburger" aria-label="תפריט">
@@ -694,6 +695,7 @@
     <a href="#chapter6" onclick="closeMobile()">⚡ פרק 6 — חשמל, מגנטיות ואלקטרומגנטיות</a>
     <a href="#chapter7" onclick="closeMobile()">🔭 פרק 7 — אופטיקה גיאומטרית — עדשות, מראות וטלסקופים</a>
     <a href="#chapter8" onclick="closeMobile()">🌤️ פרק 8 — גלים, ספקטרום ואטמוספרה</a>
+    <a href="#chapter9" onclick="closeMobile()">🧠 פרק 9 — הבנה טכנית והסקה</a>
   </div>
 </nav>
 
@@ -711,7 +713,7 @@
         <span class="stat-lbl">נושאים</span>
       </div>
       <div>
-        <span class="stat-val">8</span>
+        <span class="stat-val">9</span>
         <span class="stat-lbl">פרקים</span>
       </div>
       <div>
@@ -3614,6 +3616,234 @@
     </div><!-- /cards-grid chapter8 -->
   </section><!-- /chapter8 -->
 
+  <!-- ═══════════════════════════════════════════════════════
+       CHAPTER 9 — הבנה טכנית והסקה
+  ══════════════════════════════════════════════════════════ -->
+  <section class="chapter" id="chapter9">
+    <div class="chapter-hd">
+      <div class="ch-icon">🧠</div>
+      <div class="ch-meta">
+        <div class="ch-title">הבנה טכנית והסקה</div>
+        <div class="ch-sub">Technical Comprehension: Reasoning · 6 נושאים</div>
+      </div>
+    </div>
+    <div class="ch-divider"></div>
+    <div class="cards-grid">
+
+      <!-- CARD 56 -->
+      <article class="card" id="card56">
+        <div class="card-hd" onclick="toggleCard('card56')">
+          <div class="card-num">01</div>
+          <div class="card-hd-text">
+            <div class="card-title">יציבות גיאומטרית של שולחנות</div>
+            <div class="card-eng">Tripod vs. Four-Legged Stability</div>
+          </div>
+          <div class="card-chevron">▾</div>
+        </div>
+        <div class="card-body" id="card56-body">
+          <div class="blk blk-id">
+            <div class="blk-lbl">איך מזהים במבחן?</div>
+            <p>שאלה המציגה שני שולחנות ושואלת איזה מהם יכול להתנדנד (bounce/wobble): שולחן עגול עם 3 רגליים מול שולחן מלבני/מרובע עם 4 רגליים (angled table / round table).</p>
+          </div>
+          <div class="blk blk-formula">
+            <div class="blk-lbl">נוסחה</div>
+            <div class="formula-box">3 points → unique plane (always stable)</div>
+            <div class="formula-box">4 points → may not lie in one plane (can wobble)</div>
+          </div>
+          <div class="blk blk-vars">
+            <div class="blk-lbl">מקרא משתנים</div>
+            <ul class="vars-list">
+              <li><span class="var-sym">3 נקודות</span><span class="var-desc">מגדירות מישור יחיד בהכרח — יציב תמיד</span></li>
+              <li><span class="var-sym">4 נקודות</span><span class="var-desc">ייתכן שלא שוכנות במישור אחד — עלול להתנדנד</span></li>
+              <li><span class="var-sym">שולחן עגול</span><span class="var-desc">3 רגליים → יציב גיאומטרית</span></li>
+              <li><span class="var-sym">שולחן מלבני</span><span class="var-desc">4 רגליים → הרגל ה-4 עשויה "לצוף" מעל המשטח</span></li>
+            </ul>
+          </div>
+          <div class="blk blk-int">
+            <div class="blk-lbl">הסבר אינטואיטיבי</div>
+            <p>בגיאומטריה, שלוש נקודות כלשהן תמיד מגדירות מישור אחד ויחיד — בדיוק כמו שחצובה (טריפוד) אינה מתנדנדת לעולם. ברגע שמוסיפים רגל רביעית, היא לא מובטחת להיות באותו מישור, ולכן בכל עיוות קל בקרקע, אחת הרגליים תצוף וייווצר נידנוד.</p>
+          </div>
+        </div>
+      </article>
+
+      <!-- CARD 57 -->
+      <article class="card" id="card57">
+        <div class="card-hd" onclick="toggleCard('card57')">
+          <div class="card-num">02</div>
+          <div class="card-hd-text">
+            <div class="card-title">לחץ ברומטרי וזמן רתיחה</div>
+            <div class="card-eng">Boiling Water in Bad Weather</div>
+          </div>
+          <div class="card-chevron">▾</div>
+        </div>
+        <div class="card-body" id="card57-body">
+          <div class="blk blk-id">
+            <div class="blk-lbl">איך מזהים במבחן?</div>
+            <p>שאלה שמקשרת בין <strong>מזג אוויר רע</strong> לזמן הנדרש להרתחת מים (Do you need more time to boil water in a bad weather environment?).</p>
+          </div>
+          <div class="blk blk-formula">
+            <div class="blk-lbl">נוסחה</div>
+            <div class="formula-box">Bad weather → Low pressure → Lower boiling point → Faster boiling</div>
+          </div>
+          <div class="blk blk-vars">
+            <div class="blk-lbl">מקרא משתנים</div>
+            <ul class="vars-list">
+              <li><span class="var-sym">מזג אוויר רע</span><span class="var-desc">שקע ברומטרי — לחץ אטמוספרי נמוך מהרגיל</span></li>
+              <li><span class="var-sym">לחץ נמוך</span><span class="var-desc">מוריד את נקודת הרתיחה מ-100°C לטמפרטורה נמוכה יותר</span></li>
+              <li><span class="var-sym">תשובה</span><span class="var-desc">No — המים ירתחו מהר יותר, לא לאט יותר</span></li>
+            </ul>
+          </div>
+          <div class="blk blk-int">
+            <div class="blk-lbl">הסבר אינטואיטיבי</div>
+            <p>רתיחה מתרחשת כאשר הלחץ הפנימי של הנוזל (לחץ האדים) שווה ללחץ החיצוני. כשהלחץ החיצוני נמוך יותר (מזג אוויר רע), הנוזל מגיע לאיזון בטמפרטורה נמוכה יותר — ולכן רותח מהר יותר, לא לאט יותר.</p>
+          </div>
+        </div>
+      </article>
+
+      <!-- CARD 58 -->
+      <article class="card" id="card58">
+        <div class="card-hd" onclick="toggleCard('card58')">
+          <div class="card-num">03</div>
+          <div class="card-hd-text">
+            <div class="card-title">זמן מחזור של מטוטלת</div>
+            <div class="card-eng">Pendulum Period &amp; Length</div>
+          </div>
+          <div class="card-chevron">▾</div>
+        </div>
+        <div class="card-body" id="card58-body">
+          <div class="blk blk-id">
+            <div class="blk-lbl">איך מזהים במבחן?</div>
+            <p>שאלה על מטוטלת שאורך החוט שלה משתנה — מה קורה לזמן המחזור שלה? (period of a pendulum / length of the fiber is reduced).</p>
+          </div>
+          <div class="blk blk-formula">
+            <div class="blk-lbl">נוסחה</div>
+            <div class="formula-box">T = 2π × √(L / g)</div>
+          </div>
+          <div class="blk blk-vars">
+            <div class="blk-lbl">מקרא משתנים</div>
+            <ul class="vars-list">
+              <li><span class="var-sym">T</span><span class="var-desc">זמן מחזור (שניות) — הזמן לתנודה מלאה</span></li>
+              <li><span class="var-sym">L</span><span class="var-desc">אורך החוט (מטרים)</span></li>
+              <li><span class="var-sym">g</span><span class="var-desc">תאוצת הכובד ≈ 9.81 מ/ש²</span></li>
+              <li><span class="var-sym">T ∝ √L</span><span class="var-desc">חוט קצר יותר → T קטן יותר → מחזור מהיר יותר</span></li>
+            </ul>
+          </div>
+          <div class="blk blk-int">
+            <div class="blk-lbl">הסבר אינטואיטיבי</div>
+            <p>מטוטלת ארוכה דומה לאדם ארוך-רגליים שצועד לאט — הצעד הטבעי שלו ארוך וחוזר לאט. מטוטלת קצרה דומה לאדם קצר-רגליים שמדדה מהר. <strong>הפחתת אורך החוט תמיד מקצרת את זמן המחזור</strong>. שים לב: המסה של המשקולת אינה משפיעה כלל!</p>
+          </div>
+        </div>
+      </article>
+
+      <!-- CARD 59 -->
+      <article class="card" id="card59">
+        <div class="card-hd" onclick="toggleCard('card59')">
+          <div class="card-num">04</div>
+          <div class="card-hd-text">
+            <div class="card-title">חוק ארכימדס והידבקות לקרקעית</div>
+            <div class="card-eng">Zero Buoyancy — Board on the Bottom</div>
+          </div>
+          <div class="card-chevron">▾</div>
+        </div>
+        <div class="card-body" id="card59-body">
+          <div class="blk blk-id">
+            <div class="blk-lbl">איך מזהים במבחן?</div>
+            <p>שאלה על לוח עץ אטום שנדחף ומוצמד לחלוטין לקרקעית הבריכה/מיכל — מה יקרה כשמשחררים? (impermeable wooden board is pushed to the ground).</p>
+          </div>
+          <div class="blk blk-formula">
+            <div class="blk-lbl">נוסחה</div>
+            <div class="formula-box">F_buoyancy = P_bottom - P_top = ρ·g·h·A</div>
+            <div class="formula-box">h → 0 (sealed to floor) ⟹ F_buoyancy = 0</div>
+          </div>
+          <div class="blk blk-vars">
+            <div class="blk-lbl">מקרא משתנים</div>
+            <ul class="vars-list">
+              <li><span class="var-sym">F_buoyancy</span><span class="var-desc">כוח הציפה הכולל על הגוף</span></li>
+              <li><span class="var-sym">P_bottom − P_top</span><span class="var-desc">הפרש הלחץ בין תחתית לעליה</span></li>
+              <li><span class="var-sym">h = 0</span><span class="var-desc">אין מים מתחת → אין הפרש לחצים → אין ציפה</span></li>
+              <li><span class="var-sym">תשובה</span><span class="var-desc">הלוח נשאר בקרקעית (The board stays at the ground)</span></li>
+            </ul>
+          </div>
+          <div class="blk blk-int">
+            <div class="blk-lbl">הסבר אינטואיטיבי</div>
+            <p>כוח הציפה נובע מהפרש הלחצים: מים לוחצים מלמטה חזק יותר ממה שהם לוחצים מלמעלה. כשלוח אטום מוצמד לחלוטין לקרקעית, <strong>אין מים מתחתיו</strong> שיצרו לחץ — רק לחץ מלמעלה. התוצאה: הלוח יישאר על הקרקעית כאילו "נדבק" אליה.</p>
+          </div>
+        </div>
+      </article>
+
+      <!-- CARD 60 -->
+      <article class="card" id="card60">
+        <div class="card-hd" onclick="toggleCard('card60')">
+          <div class="card-num">05</div>
+          <div class="card-hd-text">
+            <div class="card-title">גלי מים ותנועה מחזורית</div>
+            <div class="card-eng">Water Strider Doppler Waves</div>
+          </div>
+          <div class="card-chevron">▾</div>
+        </div>
+        <div class="card-body" id="card60-body">
+          <div class="blk blk-id">
+            <div class="blk-lbl">איך מזהים במבחן?</div>
+            <p>איור של מעגלי גלים על מים שנראים דחוסים גם מצד ימין <em>וגם</em> מצד שמאל של מקור הגלים (waves of a water strider). השאלה: לאן נע מקור הגלים?</p>
+          </div>
+          <div class="blk blk-formula">
+            <div class="blk-lbl">נוסחה</div>
+            <div class="formula-box">Doppler: compressed waves → source moving toward observer</div>
+            <div class="formula-box">Compressed on BOTH sides → source oscillates back &amp; forth</div>
+          </div>
+          <div class="blk blk-vars">
+            <div class="blk-lbl">מקרא משתנים</div>
+            <ul class="vars-list">
+              <li><span class="var-sym">גלים דחוסים מצד אחד</span><span class="var-desc">מקור נע בכיוון אחד (אפקט דופלר קלאסי)</span></li>
+              <li><span class="var-sym">גלים דחוסים משני הצדדים</span><span class="var-desc">מקור מתנודד הלוך ושוב — תנועה מחזורית</span></li>
+              <li><span class="var-sym">תשובה</span><span class="var-desc">Back and forth — לא כיוון אחד ספציפי</span></li>
+            </ul>
+          </div>
+          <div class="blk blk-int">
+            <div class="blk-lbl">הסבר אינטואיטיבי</div>
+            <p>אפקט דופלר רגיל: מקור שנע לכיוון אחד → גלים דחוסים לפניו, מרוחים מאחוריו. אם הגלים <strong>דחוסים גם מימין וגם משמאל</strong>, זה מרמז שהמקור נע לשני הכיוונים לסירוגין — כלומר הוא מתנדנד הלוך ושוב בתוך הנקודה שלו.</p>
+          </div>
+        </div>
+      </article>
+
+      <!-- CARD 61 -->
+      <article class="card" id="card61">
+        <div class="card-hd" onclick="toggleCard('card61')">
+          <div class="card-num">06</div>
+          <div class="card-hd-text">
+            <div class="card-title">פרספקטיבה אטמוספרית</div>
+            <div class="card-eng">Atmospheric Perspective</div>
+          </div>
+          <div class="card-chevron">▾</div>
+        </div>
+        <div class="card-body" id="card61-body">
+          <div class="blk blk-id">
+            <div class="blk-lbl">איך מזהים במבחן?</div>
+            <p>שאלה המציגה שני הרים (או שני עצמים) ושואלת איזה נראה כהה יותר (Which mountain appears darker). לרוב יש תמונה עם הר קרוב וחד, והר רחוק ומטושטש.</p>
+          </div>
+          <div class="blk blk-formula">
+            <div class="blk-lbl">נוסחה</div>
+            <div class="formula-box">Contrast ∝ 1 / Distance</div>
+            <div class="formula-box">Closer object → darker, sharper → more contrast</div>
+          </div>
+          <div class="blk blk-vars">
+            <div class="blk-lbl">מקרא משתנים</div>
+            <ul class="vars-list">
+              <li><span class="var-sym">עצם קרוב</span><span class="var-desc">פחות אטמוספרה בינינו → כהה וחד (contrast גבוה)</span></li>
+              <li><span class="var-sym">עצם רחוק</span><span class="var-desc">יותר אטמוספרה → בהיר, דהוי ומטושטש</span></li>
+              <li><span class="var-sym">פיזור אור</span><span class="var-desc">חלקיקי אוויר מפזרים את האור וגורמים לדהיון עם המרחק</span></li>
+            </ul>
+          </div>
+          <div class="blk blk-int">
+            <div class="blk-lbl">הסבר אינטואיטיבי</div>
+            <p>האטמוספרה מכילה חלקיקים שמפזרים אור. ככל שהאור עובר מרחק גדול יותר דרך האטמוספרה, יותר אור מתפזר הצידה ופחות מגיע לעיננו — העצם נראה בהיר ודהוי. ההר הקרוב, שהאור ממנו עובר פחות אטמוספרה, תמיד יראה <strong>כהה וחד יותר</strong>.</p>
+          </div>
+        </div>
+      </article>
+
+    </div><!-- /cards-grid ch9 -->
+  </section><!-- /chapter9 -->
+
 </main>
 
 <!-- ══════════════════════════════════════════════════════════
@@ -3903,6 +4133,30 @@
     card55: {
       kw: ['A chimp comes closer to a big flat mirror at a speed of 4 km/h'],
       tip: 'למרות שמבחינה פיזיקלית מהירות ההתקרבות היא 4 קמ"ש או 8 קמ"ש (תלוי בנקודת הייחוס), במבחן ה-SkyTest יש באג ידוע בשאלה הספציפית הזו. המערכת מצפה שתבחר תמיד בתשובה שהיא בדיוק חצי מהמהירות הנתונה בשאלה (עבור 4 קמ"ש, נסמן 2 km/h).'
+    },
+    card56: {
+      kw: ['Which of both tables can bounce', 'angled table', 'round table'],
+      tip: 'בגיאומטריה, 3 נקודות תמיד מגדירות מישור יחיד. לכן, שולחן בעל 3 רגליים (העגול) יישאר יציב תמיד ולא יתנדנד בשום מצב. שולחן בעל 4 רגליים (The angled table) רגיש לעיוותי משטח, ולכן הוא זה שיכול להתנדנד.'
+    },
+    card57: {
+      kw: ['Do you need more time to boil water in a bad weather environment'],
+      tip: 'מזג אוויר רע מתאפיין בלחץ אטמוספרי נמוך (שקע ברומטרי). ככל שהלחץ החיצוני נמוך יותר, כך יורדת נקודת הרתיחה של המים. המשמעות היא שהמים ירתחו מהר יותר, ולכן לא נדרש יותר זמן (No).'
+    },
+    card58: {
+      kw: ['period of a pendulum', 'length of the fiber is reduced'],
+      tip: 'זמן המחזור של מטוטלת (הזמן שלוקח לה להשלים תנודה) תלוי אך ורק באורך החוט. כאשר החוט קצר יותר (reduced), המשקולת עוברת מסלול קטן ומהיר יותר, ולכן זמן המחזור מתקצר (The period is shorter).'
+    },
+    card59: {
+      kw: ['impermeable wooden board is pushed to the ground'],
+      tip: 'כדי שיווצר כוח ציפה שירים עצם למעלה, חובה שיהיו מים מתחתיו שייצרו לחץ. כאשר לוח עץ אטום נדחף ומוצמד לחלוטין לקרקעית, אין תחתיו מים, ולכן הלחץ מלמעלה פשוט משאיר אותו צמוד לרצפה (The board stays at the ground).'
+    },
+    card60: {
+      kw: ['waves of a water strider'],
+      tip: 'כשרואים איור של מעגלי גלים אקסצנטריים שדחוסים גם מצד ימין וגם מצד שמאל, זה מעיד על כך שהאובייקט לא נע בכיוון אחד, אלא משנה את כיוונו הלוך ושוב (Back and forth) בתוך המים.'
+    },
+    card61: {
+      kw: ['Which mountain appears darker'],
+      tip: 'ככל שעצם נמצא רחוק יותר, האור המגיע ממנו חווה יותר פיזור בתוך האטמוספרה, מה שגורם לו להיראות בהיר, דהוי ומטושטש יותר. לכן, ההר הקרוב אלינו יהיה תמיד זה שנראה כהה וחד יותר (איור מספר 2).'
     }
   };
 
