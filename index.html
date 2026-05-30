@@ -676,6 +676,7 @@
       <li><a href="#chapter5">⚡ חשמל</a></li>
       <li><a href="#chapter6">🔭 אופטיקה</a></li>
       <li><a href="#chapter7">🌈 גלים</a></li>
+      <li><a href="#chapter8">🔥 תרמודינמיקה</a></li>
     </ul>
 
     <button class="hamburger" id="hamburger" aria-label="תפריט">
@@ -691,6 +692,7 @@
     <a href="#chapter5" onclick="closeMobile()">⚡ פרק 5 — חשמל ואלקטרומגנטיות</a>
     <a href="#chapter6" onclick="closeMobile()">🔭 פרק 6 — אופטיקה גיאומטרית ומראות</a>
     <a href="#chapter7" onclick="closeMobile()">🌈 פרק 7 — גלים, ספקטרום ואטמוספרה</a>
+    <a href="#chapter8" onclick="closeMobile()">🔥 פרק 8 — תרמודינמיקה, חוקי גזים וזורמים</a>
   </div>
 </nav>
 
@@ -708,7 +710,7 @@
         <span class="stat-lbl">נושאים</span>
       </div>
       <div>
-        <span class="stat-val">7</span>
+        <span class="stat-val">8</span>
         <span class="stat-lbl">פרקים</span>
       </div>
       <div>
@@ -2456,6 +2458,921 @@
     </div><!-- /cards-grid ch7 -->
   </section><!-- /chapter7 -->
 
+  <!-- ════════════════════════════════════════════════════════
+       CHAPTER 8 — THERMODYNAMICS, GAS LAWS & ADVANCED FLUIDS
+  ════════════════════════════════════════════════════════════ -->
+  <section class="chapter" id="chapter8">
+    <div class="chapter-hd">
+      <div class="ch-icon">🔥</div>
+      <div class="ch-meta">
+        <div class="ch-title">פרק 8 — תרמודינמיקה, חוקי גזים ומכניקת זורמים מתקדמת</div>
+        <div class="ch-sub">Thermodynamics, Gas Laws &amp; Advanced Fluid Mechanics · 19 נושאים</div>
+      </div>
+    </div>
+    <div class="ch-divider"></div>
+    <div class="cards-grid">
+
+      <!-- ─── CARD 30: Compressed Gases in Rigid Containers ─── -->
+      <article class="card" id="card30">
+        <div class="card-hd" onclick="toggleCard('card30')">
+          <div class="card-num">30</div>
+          <div class="card-hd-text">
+            <div class="card-title">גזים דחוסים במיכלים קשיחים</div>
+            <div class="card-eng">Compressed Gases in Rigid Containers</div>
+          </div>
+          <div class="card-chevron">▾</div>
+        </div>
+        <div class="card-body" id="card30-body">
+          <div class="blk blk-id">
+            <div class="blk-lbl">🔍 איך מזהים במבחן?</div>
+            <p>שאלה שמציגה <strong>שני מיכלים קשיחים בגדלים שונים</strong>, מולאו מחדש עם אותו גז באותו לחץ, ושואלת מי ישקל יותר. מילות מפתח: "refilled with helium", "rigid bowl", "seesaw". לעיתים מוצגים כמאזניים ושואלים לאיזה צד ייטו.</p>
+            <div style="display:flex;gap:10px;margin-top:8px;align-items:center;justify-content:center">
+              <div style="background:rgba(59,130,246,.08);border:1px solid rgba(59,130,246,.25);border-radius:8px;padding:12px;text-align:center;flex:1">
+                <div style="font-size:28px">🫙</div>
+                <div style="font-size:11px;font-weight:800;color:#1d4ed8;margin:4px 0">מיכל קטן</div>
+                <div style="font-size:11px;color:#1e3a8a">V קטן → n קטן<br>→ מסה קטנה</div>
+              </div>
+              <div style="font-size:24px;color:var(--slate)">⚖️</div>
+              <div style="background:rgba(34,197,94,.08);border:1px solid rgba(34,197,94,.25);border-radius:8px;padding:12px;text-align:center;flex:1">
+                <div style="font-size:36px">🛢️</div>
+                <div style="font-size:11px;font-weight:800;color:#14532d;margin:4px 0">מיכל גדול</div>
+                <div style="font-size:11px;color:#166534">V גדול → n גדול<br>→ מסה גדולה ✓</div>
+              </div>
+            </div>
+          </div>
+          <div class="blk blk-formula">
+            <div class="blk-lbl">📏 נוסחה</div>
+            <div class="formula-box">PV = nRT  →  n = PV / RT</div>
+            <div class="formula-box">m = n × M_molar</div>
+            <div class="formula-box">Same P, T  →  n ∝ V  →  m ∝ V</div>
+          </div>
+          <div class="blk blk-vars">
+            <div class="blk-lbl">📖 מקרא משתנים</div>
+            <ul class="vars-list">
+              <li><span class="sym">n</span> כמות המולים של הגז — גדולה יותר = יותר מסה</li>
+              <li><span class="sym">V</span> נפח המיכל (ליטר / מ³)</li>
+              <li><span class="sym">P</span> לחץ הגז (זהה בשני המיכלים)</li>
+              <li><span class="sym">T</span> טמפרטורה בקלוין (זהה בשני המיכלים)</li>
+              <li><span class="sym">M</span> משקל מולרי של הגז (גרם/מול)</li>
+              <li><span class="sym">m</span> מסת הגז במיכל = n × M</li>
+            </ul>
+          </div>
+          <div class="blk blk-int">
+            <div class="blk-lbl">💡 הסבר אינטואיטיבי</div>
+            <p>כאשר שני מיכלים קשיחים מולאו באותו לחץ ואותה טמפרטורה, ה-P וה-T בנוסחת PV=nRT זהים. לכן <strong>n פרופורציונלי ישירות ל-V</strong>. מיכל גדול פי שניים = מכיל פי שניים מולים = פי שניים מסה. עניין של נפח בלבד.</p>
+            <div class="tip"><span class="tip-icon">⚖️</span>על המאזניים: המיכל הגדול תמיד ינצח — לא בגלל שהמיכל עצמו כבד יותר, אלא כי הוא מכיל יותר מולקולות גז.</div>
+          </div>
+        </div>
+      </article>
+
+      <!-- ─── CARD 31: Vacuum Boiling & Evaporative Cooling ─── -->
+      <article class="card" id="card31">
+        <div class="card-hd" onclick="toggleCard('card31')">
+          <div class="card-num">31</div>
+          <div class="card-hd-text">
+            <div class="card-title">רתיחה בוואקום וקירור באידוי</div>
+            <div class="card-eng">Vacuum Boiling &amp; Evaporative Cooling</div>
+          </div>
+          <div class="card-chevron">▾</div>
+        </div>
+        <div class="card-body" id="card31-body">
+          <div class="blk blk-id">
+            <div class="blk-lbl">🔍 איך מזהים במבחן?</div>
+            <p>שאלה שמתארת <strong>כלי שמורידים ממנו אוויר (וואקום)</strong> המכיל מים קרים — והמים רותחים! מילות מפתח: "glass cover is vacuumed", "water boils", "temperature drops". לעיתים שואלים: "מה קרה לטמפרטורה אחרי הרתיחה?"</p>
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:8px">
+              <div style="background:rgba(59,130,246,.08);border:1px solid rgba(59,130,246,.25);border-radius:8px;padding:10px;text-align:center">
+                <div style="font-size:20px;margin-bottom:4px">📉</div>
+                <div style="font-size:11px;font-weight:800;color:#1d4ed8;margin-bottom:3px">לחץ יורד</div>
+                <div style="font-size:11px;color:#1e3a8a">נקודת הרתיחה יורדת מ-100°C לטמפ' נמוכה בהרבה</div>
+              </div>
+              <div style="background:rgba(239,68,68,.08);border:1px solid rgba(239,68,68,.25);border-radius:8px;padding:10px;text-align:center">
+                <div style="font-size:20px;margin-bottom:4px">🥶</div>
+                <div style="font-size:11px;font-weight:800;color:#991b1b;margin-bottom:3px">רתיחה = קירור</div>
+                <div style="font-size:11px;color:#b91c1c">אידוי שואב אנרגיה מהנוזל — הטמפ' צונחת</div>
+              </div>
+            </div>
+          </div>
+          <div class="blk blk-formula">
+            <div class="blk-lbl">📏 נוסחה</div>
+            <div class="formula-box">T_boil decreases as P_external decreases</div>
+            <div class="formula-box">Q_evap = m × L_v        (אנדותרמי — שואב חום)</div>
+            <div class="formula-box">At 0.03 atm: water boils at ~25°C !</div>
+          </div>
+          <div class="blk blk-vars">
+            <div class="blk-lbl">📖 מקרא משתנים</div>
+            <ul class="vars-list">
+              <li><span class="sym">T_boil</span> נקודת הרתיחה — יורדת עם ירידת הלחץ החיצוני</li>
+              <li><span class="sym">P_ext</span> לחץ חיצוני על הנוזל — ככל שנמוך יותר, רתיחה קלה יותר</li>
+              <li><span class="sym">Q_evap</span> אנרגיה הדרושה לאידוי (ג'אול)</li>
+              <li><span class="sym">L_v</span> חום חביון של אידוי — אנרגיה ליחידת מסה (J/kg)</li>
+              <li><span class="sym">אנדותרמי</span> תהליך שסופג אנרגיה מהסביבה → הנוזל מתקרר</li>
+            </ul>
+          </div>
+          <div class="blk blk-int">
+            <div class="blk-lbl">💡 הסבר אינטואיטיבי</div>
+            <p>בלחץ רגיל, מולקולות מים צריכות אנרגיה רבה כדי לנתק עצמן ולהפוך לאדים — 100°C. כשמורידים לחץ, המולקולות צריכות פחות אנרגיה לבריחה — לכן רותחים בטמפ' נמוכה. <strong>הכרחי לדעת: הרתיחה שואבת חום מהמים עצמם</strong> — לכן אחרי הרתיחה הנוזל נהיה קר יותר! כך עובד קירור אידויי (מזגן, הזעה).</p>
+            <div class="tip"><span class="tip-icon">🏔️</span>בהר גבוה (לחץ נמוך): מים רותחים ב-~90°C — לכן תה לא "מבושל" כראוי. בלחץ גבוה (סיר לחץ): רתיחה ב-120°C+ — בישול מהיר יותר.</div>
+          </div>
+        </div>
+      </article>
+
+      <!-- ─── CARD 32: Melting Floating Ice ─────────────────── -->
+      <article class="card" id="card32">
+        <div class="card-hd" onclick="toggleCard('card32')">
+          <div class="card-num">32</div>
+          <div class="card-hd-text">
+            <div class="card-title">המסת קרח צף — חוק ארכימדס</div>
+            <div class="card-eng">Melting Floating Ice (Archimedes)</div>
+          </div>
+          <div class="card-chevron">▾</div>
+        </div>
+        <div class="card-body" id="card32-body">
+          <div class="blk blk-id">
+            <div class="blk-lbl">🔍 איך מזהים במבחן?</div>
+            <p>שאלה קלאסית: <strong>"קוביית קרח צפה בכוס מים — מה יקרה למפלס המים כשתינמס?"</strong> מילות מפתח: "melting ice cube", "water level remains". תשובה נכונה: <strong>לא ישתנה</strong>. שאלת מלכודת נפוצה מאוד.</p>
+            <div style="background:rgba(59,130,246,.06);border:1px solid rgba(59,130,246,.2);border-radius:8px;padding:12px;margin-top:8px;direction:ltr;text-align:center;font-family:monospace;font-size:12px;color:#1e3a8a">
+              Ice cube floating: displaces water = its own WEIGHT<br>
+              ──────────────────────────────────────────<br>
+              Ice melts → becomes water of same WEIGHT<br>
+              → same VOLUME as water displaced<br>
+              → water level: NO CHANGE ✓
+            </div>
+          </div>
+          <div class="blk blk-formula">
+            <div class="blk-lbl">📏 נוסחה</div>
+            <div class="formula-box">Float condition: m_ice = ρ_water × V_displaced</div>
+            <div class="formula-box">V_melted = m_ice / ρ_water = V_displaced</div>
+            <div class="formula-box">ρ_ice ≈ 917 kg/m³  |  ρ_water = 1000 kg/m³</div>
+          </div>
+          <div class="blk blk-vars">
+            <div class="blk-lbl">📖 מקרא משתנים</div>
+            <ul class="vars-list">
+              <li><span class="sym">V_disp</span> נפח המים שהקרח דוחק בצפייתו</li>
+              <li><span class="sym">m_ice</span> מסת הקרח — קבועה לאורך ההמסה</li>
+              <li><span class="sym">V_melt</span> נפח המים שנוצרים מהמסת הקרח = V_disp בדיוק</li>
+              <li><span class="sym">ρ_ice</span> ≈ 917 kg/m³ — לכן כ-90% מהקרח שקוע, 10% בחוץ</li>
+              <li><span class="sym">ρ_water</span> = 1000 kg/m³ — צפוף יותר מקרח → קרח צף</li>
+            </ul>
+          </div>
+          <div class="blk blk-int">
+            <div class="blk-lbl">💡 הסבר אינטואיטיבי</div>
+            <p>קרח צף דוחק מים ששוקלים בדיוק כמוהו (עיקרון ארכימדס). כשהקרח נמס, הוא הופך למים בעלי אותה מסה. נפח מים = מסה ÷ צפיפות = מסה ÷ 1000 = בדיוק אותו הנפח שנדחק קודם. <strong>תוצאה: אפס שינוי במפלס.</strong> מסקנה רלוונטית: המסת קרח ב<em>ים</em> לא מעלה מפלס אוקיאנוס — רק קרח יבשתי (גלקיונות) מעלה מפלס.</p>
+            <div class="tip"><span class="tip-icon">🧊</span>חריג חשוב: קרח <em>מעוגן לקרקעית</em> (לא צף) — סיפור אחר לגמרי! ראה כרטיס 45.</div>
+          </div>
+        </div>
+      </article>
+
+      <!-- ─── CARD 33: Balloon Expansion at Altitude ─────────── -->
+      <article class="card" id="card33">
+        <div class="card-hd" onclick="toggleCard('card33')">
+          <div class="card-num">33</div>
+          <div class="card-hd-text">
+            <div class="card-title">התרחבות בלוני גז בגובה</div>
+            <div class="card-eng">High Altitude Balloon Expansion</div>
+          </div>
+          <div class="card-chevron">▾</div>
+        </div>
+        <div class="card-body" id="card33-body">
+          <div class="blk blk-id">
+            <div class="blk-lbl">🔍 איך מזהים במבחן?</div>
+            <p>שאלה על <strong>בלון שעולה לגובה</strong> ומה קורה לו. מילות מפתח: "balloons can fly higher", "balloon expands", "burst". לרוב שואלים: "בין בלון רפוי לבלון מתוח — מי יוכל לטפס גבוה יותר?"</p>
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:8px">
+              <div style="background:rgba(34,197,94,.08);border:1px solid rgba(34,197,94,.25);border-radius:8px;padding:10px;text-align:center">
+                <div style="font-size:24px">🎈</div>
+                <div style="font-size:11px;font-weight:800;color:#14532d;margin:4px 0">בלון רפוי</div>
+                <div style="font-size:11px;color:#166534">יכול להתרחב ← יטפס גבוה יותר בבטחה</div>
+              </div>
+              <div style="background:rgba(239,68,68,.08);border:1px solid rgba(239,68,68,.25);border-radius:8px;padding:10px;text-align:center">
+                <div style="font-size:24px">💥</div>
+                <div style="font-size:11px;font-weight:800;color:#991b1b;margin:4px 0">בלון מתוח</div>
+                <div style="font-size:11px;color:#b91c1c">אין מרחב התרחבות ← יתפוצץ בגובה נמוך יותר</div>
+              </div>
+            </div>
+          </div>
+          <div class="blk blk-formula">
+            <div class="blk-lbl">📏 נוסחה</div>
+            <div class="formula-box">P₁V₁ = P₂V₂         (חוק בויל, T קבוע)</div>
+            <div class="formula-box">P decreases with altitude  →  V increases</div>
+            <div class="formula-box">P_atm at 10km ≈ 0.26 atm  →  V ≈ 3.8 × V₀</div>
+          </div>
+          <div class="blk blk-vars">
+            <div class="blk-lbl">📖 מקרא משתנים</div>
+            <ul class="vars-list">
+              <li><span class="sym">P₁</span> לחץ בפני הקרקע (~1 atm)</li>
+              <li><span class="sym">P₂</span> לחץ בגובה (נמוך יותר ככל שגובה עולה)</li>
+              <li><span class="sym">V₁</span> נפח הבלון בקרקע</li>
+              <li><span class="sym">V₂</span> נפח הבלון בגובה — גדול יותר (פרופורציונלי ל-1/P)</li>
+              <li><span class="sym">מעטפת רפויה</span> מאפשרת שינוי נפח — בלון לא מתפוצץ</li>
+            </ul>
+          </div>
+          <div class="blk blk-int">
+            <div class="blk-lbl">💡 הסבר אינטואיטיבי</div>
+            <p>בגובה יש פחות אוויר מסביב → פחות לחץ חיצוני על הבלון. הגז בפנים "דוחף החוצה" חזק יחסית → הבלון מתרחב. בלון רפוי = יש לו מקום לגדול. בלון מתוח = כבר על גבול — עלייה קטנה בנפח תגרום לפרצה. <strong>בלוני מדע</strong> (לאסטרונומיה) מותחלים ב-1% מנפח מקסימלי ומתרחבים פי 100+ עד שהם מתפוצצים בגובה 40 ק"מ.</p>
+            <div class="tip"><span class="tip-icon">🚀</span>ככל שהלחץ החיצוני יורד — כך גדל נפח הגז פנימה. P × V = קבוע. הגובה כופל את הנפח ומחלק את הלחץ.</div>
+          </div>
+        </div>
+      </article>
+
+      <!-- ─── CARD 34: Manometer Pressure ───────────────────── -->
+      <article class="card" id="card34">
+        <div class="card-hd" onclick="toggleCard('card34')">
+          <div class="card-num">34</div>
+          <div class="card-hd-text">
+            <div class="card-title">לחץ במד מנומטר</div>
+            <div class="card-eng">Manometer / Hydraulic Pressure</div>
+          </div>
+          <div class="card-chevron">▾</div>
+        </div>
+        <div class="card-body" id="card34-body">
+          <div class="blk blk-id">
+            <div class="blk-lbl">🔍 איך מזהים במבחן?</div>
+            <p>שאלה שנותנת <strong>כוח על בוכנה ושטח חתך</strong> ושואלת מה יראה מד הלחץ. מילות מפתח: "How much pressure shows the manometer", "kp/cm²". לרוב יינתנו ערכים כמו כוח ב-kp ושטח ב-cm².</p>
+            <div style="background:rgba(59,130,246,.06);border:1px solid rgba(59,130,246,.2);border-radius:8px;padding:12px;margin-top:8px;direction:ltr;text-align:center;font-family:monospace;font-size:12px;color:#1e3a8a">
+              Force (kp) ↓<br>
+              ┌──────────────┐<br>
+              │  Piston A    │ ← P = F / A<br>
+              └──────┬───────┘<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│ fluid<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;[Manometer] → reads P
+            </div>
+          </div>
+          <div class="blk blk-formula">
+            <div class="blk-lbl">📏 נוסחה</div>
+            <div class="formula-box">P = F / A</div>
+            <div class="formula-box">Units:  F in kp,  A in cm²  →  P in kp/cm²</div>
+            <div class="formula-box">Pascal's Law: P is equal everywhere in fluid</div>
+          </div>
+          <div class="blk blk-vars">
+            <div class="blk-lbl">📖 מקרא משתנים</div>
+            <ul class="vars-list">
+              <li><span class="sym">P</span> לחץ (kp/cm² = kgf/cm² ≈ 0.98 bar)</li>
+              <li><span class="sym">F</span> כוח על הבוכנה (קילופונד = kp)</li>
+              <li><span class="sym">A</span> שטח חתך הבוכנה (cm²)</li>
+              <li><span class="sym">kp</span> קילופונד — כוח כבידה על ק"ג אחד ≈ 9.8 N</li>
+              <li><span class="sym">מנומטר</span> מד לחץ — מציג את הלחץ בנוזל</li>
+            </ul>
+          </div>
+          <div class="blk blk-int">
+            <div class="blk-lbl">💡 הסבר אינטואיטיבי</div>
+            <p>פשוט חלוקה: כוח חלקי שטח. דוגמה: 50 kp על בוכנה של 10 cm² → לחץ = 5 kp/cm². לפי חוק פסקל, לחץ זה שווה בכל נקודות הנוזל הסגור — לכן המנומטר שמחובר לכל מקום בנוזל יראה <em>בדיוק</em> 5 kp/cm².</p>
+            <div class="tip"><span class="tip-icon">🔧</span>שים לב ליחידות! kp ÷ cm² = kp/cm². אם הכוח בניוטון ושטח במ² — התוצאה בפסקל. תמיד בדוק שהיחידות תואמות.</div>
+          </div>
+        </div>
+      </article>
+
+      <!-- ─── CARD 35: Heater Surface Area ──────────────────── -->
+      <article class="card" id="card35">
+        <div class="card-hd" onclick="toggleCard('card35')">
+          <div class="card-num">35</div>
+          <div class="card-hd-text">
+            <div class="card-title">ייצור חום ושטח פנים — מחממים</div>
+            <div class="card-eng">Heater Heat Generation &amp; Surface Area</div>
+          </div>
+          <div class="card-chevron">▾</div>
+        </div>
+        <div class="card-body" id="card35-body">
+          <div class="blk blk-id">
+            <div class="blk-lbl">🔍 איך מזהים במבחן?</div>
+            <p>שאלה שמציגה <strong>שני מחממים חשמליים — אחד עם צלעות ואחד חלק</strong>, ושואלת מי מייצר יותר חום לאורך זמן. מילות מפתח: "Which heater generates more heat", "radiator". לעיתים מתוארים כ"radiant heater" מול "flat heater".</p>
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:8px">
+              <div style="background:rgba(239,68,68,.08);border:1px solid rgba(239,68,68,.25);border-radius:8px;padding:10px;text-align:center">
+                <div style="font-size:22px">🟥</div>
+                <div style="font-size:11px;font-weight:800;color:#991b1b;margin:4px 0">מחמם חלק</div>
+                <div style="font-size:11px;color:#b91c1c">שטח פנים קטן → פיזור חום גרוע → מתחמם מהר → תרמוסטט מנתק תכוף → <strong>פחות חום כולל</strong></div>
+              </div>
+              <div style="background:rgba(34,197,94,.08);border:1px solid rgba(34,197,94,.25);border-radius:8px;padding:10px;text-align:center">
+                <div style="font-size:22px">📡</div>
+                <div style="font-size:11px;font-weight:800;color:#14532d;margin:4px 0">מחמם עם צלעות</div>
+                <div style="font-size:11px;color:#166534">שטח פנים גדול → פיזור חום טוב → לא מתחמם יתר → תרמוסטט פחות מנתק → <strong>יותר חום כולל</strong></div>
+              </div>
+            </div>
+          </div>
+          <div class="blk blk-formula">
+            <div class="blk-lbl">📏 נוסחה</div>
+            <div class="formula-box">Q_total = P_rated × t_on</div>
+            <div class="formula-box">Duty Cycle = t_on / t_total  (↑ with surface area)</div>
+            <div class="formula-box">Q_conv ∝ h × A_surface × ΔT  (Newton's cooling)</div>
+          </div>
+          <div class="blk blk-vars">
+            <div class="blk-lbl">📖 מקרא משתנים</div>
+            <ul class="vars-list">
+              <li><span class="sym">Q_total</span> חום כולל שנוצר לאורך זמן (ג'אול)</li>
+              <li><span class="sym">P_rated</span> הספק חשמלי נומינלי של המחמם (וואט)</li>
+              <li><span class="sym">t_on</span> זמן שהמחמם דולק — גדל ככל ששטח הפנים גדול</li>
+              <li><span class="sym">A_surface</span> שטח פנים לפיזור חום (m²) — צלעות מגדילות אותו</li>
+              <li><span class="sym">Duty Cycle</span> אחוז הזמן שהמחמם פעיל — גדל עם פיזור חום טוב</li>
+            </ul>
+          </div>
+          <div class="blk blk-int">
+            <div class="blk-lbl">💡 הסבר אינטואיטיבי</div>
+            <p>שני מחממים עם אותו הספק (למשל 2000W) — אבל המחמם עם הצלעות "נושם" טוב יותר. הוא מפזר חום לאוויר ביעילות, לכן לא מגיע לטמפרטורת ניתוק מהר. <strong>יותר זמן דולק = יותר חום כולל</strong>. מחמם חלק מגיע מהר לטמפ' הניתוק → מנוחה ← פחות חום.</p>
+            <div class="tip"><span class="tip-icon">📡</span>בתשאול: "איזה מחמם מייצר יותר חום?" → תמיד זה עם הצלעות (שטח פנים גדול) — גם אם ההספק זהה.</div>
+          </div>
+        </div>
+      </article>
+
+      <!-- ─── CARD 36: Gas Buoyancy Bell ────────────────────── -->
+      <article class="card" id="card36">
+        <div class="card-hd" onclick="toggleCard('card36')">
+          <div class="card-num">36</div>
+          <div class="card-hd-text">
+            <div class="card-title">כוח ציפוי של גזים שונים בנוזל</div>
+            <div class="card-eng">Gas Buoyancy in Liquid (Bell Experiment)</div>
+          </div>
+          <div class="card-chevron">▾</div>
+        </div>
+        <div class="card-body" id="card36-body">
+          <div class="blk blk-id">
+            <div class="blk-lbl">🔍 איך מזהים במבחן?</div>
+            <p>שאלה שמציגה <strong>פעמון (bell) הפוך השקוע בנוזל, מלא בגז שונה</strong> — הליום, קסנון או אוויר. שואלים מי יצוף גבוה יותר. מילות מפתח: "filled with gas", "helium", "xenon", "floats higher".</p>
+            <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:6px;margin-top:8px">
+              <div style="background:rgba(34,197,94,.08);border:1px solid rgba(34,197,94,.25);border-radius:8px;padding:8px;text-align:center">
+                <div style="font-size:16px">🪶</div>
+                <div style="font-size:10px;font-weight:800;color:#14532d;margin:3px 0">הליום</div>
+                <div style="font-family:monospace;font-size:10px;color:#166534">ρ=0.18 kg/m³<br>צף גבוה ✓✓</div>
+              </div>
+              <div style="background:rgba(100,116,139,.07);border:1px solid rgba(100,116,139,.25);border-radius:8px;padding:8px;text-align:center">
+                <div style="font-size:16px">💨</div>
+                <div style="font-size:10px;font-weight:800;color:#374151;margin:3px 0">אוויר</div>
+                <div style="font-family:monospace;font-size:10px;color:#4b5563">ρ=1.2 kg/m³<br>צף בינוני</div>
+              </div>
+              <div style="background:rgba(239,68,68,.08);border:1px solid rgba(239,68,68,.25);border-radius:8px;padding:8px;text-align:center">
+                <div style="font-size:16px">🪨</div>
+                <div style="font-size:10px;font-weight:800;color:#991b1b;margin:3px 0">קסנון</div>
+                <div style="font-family:monospace;font-size:10px;color:#b91c1c">ρ=5.9 kg/m³<br>פחות ציפוי</div>
+              </div>
+            </div>
+          </div>
+          <div class="blk blk-formula">
+            <div class="blk-lbl">📏 נוסחה</div>
+            <div class="formula-box">F_buoy = ρ_liquid × V_bell × g   (כוח מעלה)</div>
+            <div class="formula-box">W_gas  = ρ_gas × V_bell × g      (כוח מטה)</div>
+            <div class="formula-box">F_net  = (ρ_liquid - ρ_gas) × V × g</div>
+          </div>
+          <div class="blk blk-vars">
+            <div class="blk-lbl">📖 מקרא משתנים</div>
+            <ul class="vars-list">
+              <li><span class="sym">F_net</span> כוח ציפוי נטו — ככל שגדול יותר, הפעמון צף גבוה יותר</li>
+              <li><span class="sym">ρ_liquid</span> צפיפות הנוזל (מים=1000 kg/m³)</li>
+              <li><span class="sym">ρ_gas</span> צפיפות הגז בפנים: He=0.18, אוויר=1.2, Xe=5.9 kg/m³</li>
+              <li><span class="sym">V_bell</span> נפח הפעמון — זהה לכל הגזים</li>
+            </ul>
+          </div>
+          <div class="blk blk-int">
+            <div class="blk-lbl">💡 הסבר אינטואיטיבי</div>
+            <p>כוח הציפוי תמיד שווה למשקל הנוזל שנדחק — זה קבוע לכל הגזים (תלוי בנפח הפעמון בלבד). ההבדל הוא <strong>משקל הגז עצמו</strong>: הליום כמעט ולא שוקל → כוח נטו כמעט שווה לכוח ציפוי מלא. קסנון שוקל הרבה → מפחית כוח ציפוי נטו. <em>פחות צפוף הגז → יותר הפעמון צף.</em></p>
+            <div class="tip"><span class="tip-icon">🎈</span>הליום < אוויר < קסנון בצפיפות → סדר הציפוי הפוך: הליום צף גבוה ביותר, קסנון נמוך ביותר.</div>
+          </div>
+        </div>
+      </article>
+
+      <!-- ─── CARD 37: Candles in Airtight Cover ────────────── -->
+      <article class="card" id="card37">
+        <div class="card-hd" onclick="toggleCard('card37')">
+          <div class="card-num">37</div>
+          <div class="card-hd-text">
+            <div class="card-title">דינמיקת בעירה בכלי סגור</div>
+            <div class="card-eng">Candles in an Airtight Container</div>
+          </div>
+          <div class="card-chevron">▾</div>
+        </div>
+        <div class="card-body" id="card37-body">
+          <div class="blk blk-id">
+            <div class="blk-lbl">🔍 איך מזהים במבחן?</div>
+            <p>שאלה: <strong>שני נרות בגבהים שונים מתחת לכיפת זכוכית סגורה — מי ייכבה ראשון?</strong> מילות מפתח: "glass cover is closed airtight", "candle goes out first", "The big candle". תשובה: <strong>הנר הגבוה ייכבה ראשון</strong>.</p>
+            <div style="background:rgba(100,116,139,.06);border:1px solid rgba(100,116,139,.2);border-radius:8px;padding:12px;margin-top:8px;direction:ltr;text-align:center;font-family:monospace;font-size:11px;color:#374151">
+              ┌─────────────────────┐ ← glass dome<br>
+              │  CO₂ ↑↑↑ accumulates│<br>
+              │  ────────── layer ──│ ← CO₂ layer descends<br>
+              │        🕯️&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🕯         │<br>
+              │      (tall)  (short)│<br>
+              └─────────────────────┘<br>
+              Tall candle extinguished FIRST ↑
+            </div>
+          </div>
+          <div class="blk blk-formula">
+            <div class="blk-lbl">📏 נוסחה</div>
+            <div class="formula-box">Hot combustion gases: ρ_hot &lt; ρ_air  →  rise</div>
+            <div class="formula-box">As gases cool: CO₂ accumulates top-down</div>
+            <div class="formula-box">O₂ depleted at top first  →  tall flame dies first</div>
+          </div>
+          <div class="blk blk-vars">
+            <div class="blk-lbl">📖 מקרא משתנים</div>
+            <ul class="vars-list">
+              <li><span class="sym">CO₂</span> דו-תחמוצת הפחמן — תוצר בעירה, חונק להבה</li>
+              <li><span class="sym">ρ_hot</span> צפיפות גז חם — נמוכה מאוויר → עולה לתקרה</li>
+              <li><span class="sym">O₂</span> חמצן — נדרש לבעירה, מתדלדל מהר בכלי סגור</li>
+              <li><span class="sym">שכבת CO₂</span> יורדת בהדרגה מהתקרה כלפי מטה</li>
+              <li><span class="sym">נר גבוה</span> נמצא קרוב לתקרה → נפגש עם שכבת CO₂ ראשון</li>
+            </ul>
+          </div>
+          <div class="blk blk-int">
+            <div class="blk-lbl">💡 הסבר אינטואיטיבי</div>
+            <p>גזי בעירה חמים עולים לתקרת הכלי (כמו עשן שעולה). כשהם מתקררים, ה-CO₂ (כבד מאוויר) נשאר בשכבה עליונה ויורד בהדרגה כלפי מטה. <strong>הנר הגבוה</strong> הוא הראשון שמגיע לשכבה חנוקה זו — קצ'י האחרון ייכבה.</p>
+            <div class="tip"><span class="tip-icon">🕯️</span>זיכרון: "גבוה נופל ראשון" — הנר הגבוה כי הוא בגובה שבו CO₂ מצטבר ראשון.</div>
+          </div>
+        </div>
+      </article>
+
+      <!-- ─── CARD 38: Buoyancy in Oil vs Water ─────────────── -->
+      <article class="card" id="card38">
+        <div class="card-hd" onclick="toggleCard('card38')">
+          <div class="card-num">38</div>
+          <div class="card-hd-text">
+            <div class="card-title">עומק שיקוע — שמן לעומת מים</div>
+            <div class="card-eng">Depth of Immersion: Oil vs. Water</div>
+          </div>
+          <div class="card-chevron">▾</div>
+        </div>
+        <div class="card-body" id="card38-body">
+          <div class="blk blk-id">
+            <div class="blk-lbl">🔍 איך מזהים במבחן?</div>
+            <p>שאלה: גוף צף על מים — <strong>מה יקרה לעומק השיקוע אם יועבר לשמן?</strong> מילות מפתח: "floats on the water surface", "floats in oil instead", "More than half of the object is covered". תשובה: ישקע <strong>עמוק יותר</strong> בשמן.</p>
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:8px">
+              <div style="background:rgba(59,130,246,.08);border:1px solid rgba(59,130,246,.25);border-radius:8px;padding:10px;text-align:center">
+                <div style="font-family:monospace;font-size:12px;color:#1e3a8a;margin-bottom:6px">
+                  ▓▓▓▓▓▓<br>
+                  ════════ ← water surface<br>
+                  ░░░░░░░░ (30% submerged)
+                </div>
+                <div style="font-size:11px;font-weight:800;color:#1d4ed8">מים (ρ=1000)</div>
+                <div style="font-size:11px;color:#1e3a8a">שיקוע רדוד יחסית</div>
+              </div>
+              <div style="background:rgba(245,158,11,.08);border:1px solid rgba(245,158,11,.25);border-radius:8px;padding:10px;text-align:center">
+                <div style="font-family:monospace;font-size:12px;color:#92400e;margin-bottom:6px">
+                  ▓▓▓<br>
+                  ════ ← oil surface<br>
+                  ░░░░░░░░░░ (60%+ submerged)
+                </div>
+                <div style="font-size:11px;font-weight:800;color:#92400e">שמן (ρ≈850)</div>
+                <div style="font-size:11px;color:#78350f">שיקוע עמוק יותר!</div>
+              </div>
+            </div>
+          </div>
+          <div class="blk blk-formula">
+            <div class="blk-lbl">📏 נוסחה</div>
+            <div class="formula-box">Float: m_obj = ρ_fluid × V_submerged</div>
+            <div class="formula-box">V_sub = m_obj / ρ_fluid</div>
+            <div class="formula-box">ρ_oil &lt; ρ_water  →  V_sub(oil) &gt; V_sub(water)</div>
+          </div>
+          <div class="blk blk-vars">
+            <div class="blk-lbl">📖 מקרא משתנים</div>
+            <ul class="vars-list">
+              <li><span class="sym">V_sub</span> נפח הגוף השקוע בנוזל — גדל ככל שהנוזל פחות צפוף</li>
+              <li><span class="sym">m_obj</span> מסת הגוף — קבועה, לא משתנה בין הנוזלים</li>
+              <li><span class="sym">ρ_water</span> = 1000 kg/m³</li>
+              <li><span class="sym">ρ_oil</span> ≈ 800–900 kg/m³ (פחות צפוף ממים)</li>
+            </ul>
+          </div>
+          <div class="blk blk-int">
+            <div class="blk-lbl">💡 הסבר אינטואיטיבי</div>
+            <p>גוף צף כשמסת הנוזל שנדחק = מסת הגוף. שמן קל יותר ממים — כל ליטר שמן שוקל פחות. לכן כדי לדחוק <em>מספיק</em> כוח ציפוי, צריך לדחוק <strong>נפח גדול יותר</strong> של שמן. נפח גדול יותר = שיקוע עמוק יותר.</p>
+            <div class="tip"><span class="tip-icon">🛢️</span>כלל: ככל שהנוזל קל יותר (ρ נמוך) — הגוף שוקע עמוק יותר. ים המלח (ρ≈1240) → אפשר לצוף בקלות יחסית; שמן → שוקעים עמוק.</div>
+          </div>
+        </div>
+      </article>
+
+      <!-- ─── CARD 39: Specific Heat Capacity ───────────────── -->
+      <article class="card" id="card39">
+        <div class="card-hd" onclick="toggleCard('card39')">
+          <div class="card-num">39</div>
+          <div class="card-hd-text">
+            <div class="card-title">קיבול חום סגולי</div>
+            <div class="card-eng">Specific Heat Capacity</div>
+          </div>
+          <div class="card-chevron">▾</div>
+        </div>
+        <div class="card-body" id="card39-body">
+          <div class="blk blk-id">
+            <div class="blk-lbl">🔍 איך מזהים במבחן?</div>
+            <p>שאלה שמשווה <strong>חימום של כמות שווה מחומרים שונים</strong>. מילות מפתח: "1 kg of plumb", "1 l of water", "heated", "A lot less energy is needed". תשובה: עופרת (plumb) צריכה הרבה פחות אנרגיה להתחמם.</p>
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:8px">
+              <div style="background:rgba(59,130,246,.08);border:1px solid rgba(59,130,246,.25);border-radius:8px;padding:10px;text-align:center">
+                <div style="font-size:22px">💧</div>
+                <div style="font-size:11px;font-weight:800;color:#1d4ed8;margin:4px 0">מים — 1 ק"ג</div>
+                <div style="font-family:monospace;font-size:10px;color:#1e3a8a">c = 4186 J/(kg·K)<br>צריך <strong>4186 J</strong> ל-+1°C</div>
+              </div>
+              <div style="background:rgba(100,116,139,.08);border:1px solid rgba(100,116,139,.25);border-radius:8px;padding:10px;text-align:center">
+                <div style="font-size:22px">🔩</div>
+                <div style="font-size:11px;font-weight:800;color:#374151;margin:4px 0">עופרת — 1 ק"ג</div>
+                <div style="font-family:monospace;font-size:10px;color:#4b5563">c = 128 J/(kg·K)<br>צריך <strong>128 J</strong> ל-+1°C</div>
+              </div>
+            </div>
+          </div>
+          <div class="blk blk-formula">
+            <div class="blk-lbl">📏 נוסחה</div>
+            <div class="formula-box">Q = m × c × ΔT</div>
+            <div class="formula-box">c_water = 4186  |  c_lead(Pb) ≈ 128  J/(kg·K)</div>
+            <div class="formula-box">Ratio: c_water / c_Pb ≈ 33  →  Pb needs 33× less energy</div>
+          </div>
+          <div class="blk blk-vars">
+            <div class="blk-lbl">📖 מקרא משתנים</div>
+            <ul class="vars-list">
+              <li><span class="sym">Q</span> אנרגיה תרמית (ג'אול)</li>
+              <li><span class="sym">m</span> מסה (ק"ג)</li>
+              <li><span class="sym">c</span> קיבול חום סגולי J/(kg·K) — כמה אנרגיה להעלות 1°C ב-1 ק"ג</li>
+              <li><span class="sym">ΔT</span> שינוי טמפרטורה (°C = K לצורך הפרשים)</li>
+              <li><span class="sym">c_water</span> = 4186 — הגבוה ביותר בין החומרים הנפוצים</li>
+            </ul>
+          </div>
+          <div class="blk blk-int">
+            <div class="blk-lbl">💡 הסבר אינטואיטיבי</div>
+            <p>מים הם יוצא דופן — יש להם קיבול חום סגולי גבוה <em>מאוד</em>. זו הסיבה שאוקיינוסים מווסתים את אקלים כדור הארץ. מתכות כבדות (עופרת, ברזל, נחושת) מתחממות מהר עם מעט אנרגיה — לכן כף מתכת בקפה מתחממת מהר אך הקפה נשאר חם זמן רב.</p>
+            <div class="tip"><span class="tip-icon">🔥</span>בחינה: "נדרשת הרבה פחות אנרגיה לחמם עופרת מאשר מים" — נכון, פי ~33 פחות!</div>
+          </div>
+        </div>
+      </article>
+
+      <!-- ─── CARD 40: Thermal Equilibrium ──────────────────── -->
+      <article class="card" id="card40">
+        <div class="card-hd" onclick="toggleCard('card40')">
+          <div class="card-num">40</div>
+          <div class="card-hd-text">
+            <div class="card-title">איזון תרמי במסות קיצוניות</div>
+            <div class="card-eng">Thermal Equilibrium with Extreme Mass Ratio</div>
+          </div>
+          <div class="card-chevron">▾</div>
+        </div>
+        <div class="card-body" id="card40-body">
+          <div class="blk blk-id">
+            <div class="blk-lbl">🔍 איך מזהים במבחן?</div>
+            <p>שאלה שמערבבת <strong>כמות קטנה של נוזל חם עם כמות אדירה של נוזל קר</strong>. מילות מפתח: "1 liter water of 90 °C", "100 liter water of 5 °C", "changes hardly". שואלים: "מה תהיה הטמפרטורה הסופית?" — התשובה: כמעט לא תשתנה.</p>
+          </div>
+          <div class="blk blk-formula">
+            <div class="blk-lbl">📏 נוסחה</div>
+            <div class="formula-box">T_f = (m₁c₁T₁ + m₂c₂T₂) / (m₁c₁ + m₂c₂)</div>
+            <div class="formula-box">When m₂ ≫ m₁:  T_f ≈ T₂  (barely changes)</div>
+            <div class="formula-box">Example: 1L@90°C + 100L@5°C → T_f ≈ 5.85°C</div>
+          </div>
+          <div class="blk blk-vars">
+            <div class="blk-lbl">📖 מקרא משתנים</div>
+            <ul class="vars-list">
+              <li><span class="sym">T_f</span> טמפרטורה סופית של התערובת</li>
+              <li><span class="sym">m₁, T₁</span> מסה וטמפ' של הנוזל החם (הקטן)</li>
+              <li><span class="sym">m₂, T₂</span> מסה וטמפ' של הנוזל הקר (הגדול — שולט!)</li>
+              <li><span class="sym">c₁, c₂</span> קיבולי חום (אם אותו חומר: מתבטלים)</li>
+            </ul>
+          </div>
+          <div class="blk blk-int">
+            <div class="blk-lbl">💡 הסבר אינטואיטיבי</div>
+            <p>המסה הגדולה <strong>שולטת</strong> בטמפרטורה הסופית. ליטר אחד ב-90°C מכיל אנרגיה מסוימת — כשהוא מתפזר ב-100 ליטר קרים, האנרגיה הזו מדוללת פי 100. כמו טיפת צבע בבריכה — כמעט לא ניכרת.</p>
+            <div class="tip"><span class="tip-icon">🌊</span>חישוב מהיר: 1L ב-90° לתוך 100L ב-5° → ΔT קטן = (90-5)×(1/101) ≈ 0.84° → T_f ≈ 5.84°C. המסה הגדולה מנצחת תמיד.</div>
+          </div>
+        </div>
+      </article>
+
+      <!-- ─── CARD 41: Water Density Anomaly ────────────────── -->
+      <article class="card" id="card41">
+        <div class="card-hd" onclick="toggleCard('card41')">
+          <div class="card-num">41</div>
+          <div class="card-hd-text">
+            <div class="card-title">האנומליה של המים — צפיפות מקסימלית ב-4°C</div>
+            <div class="card-eng">Water Density Anomaly</div>
+          </div>
+          <div class="card-chevron">▾</div>
+        </div>
+        <div class="card-body" id="card41-body">
+          <div class="blk blk-id">
+            <div class="blk-lbl">🔍 איך מזהים במבחן?</div>
+            <p>שאלה על <strong>שינוי צפיפות מים עם קירור</strong>. מילות מפתח: "cooled down from 15 °C to 1 °C", "affect water density", "increases first and decreases afterwards". שואלים: "מה קורה לצפיפות?" — תשובה: <strong>עולה עד 4°C, אז יורדת.</strong></p>
+            <div style="background:rgba(59,130,246,.06);border:1px solid rgba(59,130,246,.2);border-radius:8px;padding:10px;margin-top:8px;direction:ltr;text-align:center;font-family:monospace;font-size:11px;color:#1e3a8a">
+              ρ (kg/m³)<br>
+              1000 ──────── ● (4°C) MAX<br>
+              &nbsp;999 &nbsp;&nbsp;&nbsp;↗&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;↘<br>
+              &nbsp;998 &nbsp;↗&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;↘<br>
+              &nbsp;917 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;● (0°C ice)<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;15°C ──→ 4°C ──→ 0°C
+            </div>
+          </div>
+          <div class="blk blk-formula">
+            <div class="blk-lbl">📏 נוסחה</div>
+            <div class="formula-box">ρ_max(water) = 1000 kg/m³  at  T = 4°C</div>
+            <div class="formula-box">ρ_ice = 917 kg/m³  at  0°C  (less dense!)</div>
+            <div class="formula-box">15°C→4°C: ρ increases | 4°C→0°C: ρ decreases</div>
+          </div>
+          <div class="blk blk-vars">
+            <div class="blk-lbl">📖 מקרא משתנים</div>
+            <ul class="vars-list">
+              <li><span class="sym">4°C</span> טמפרטורת הצפיפות המקסימלית של מים — ייחודית לחומר זה</li>
+              <li><span class="sym">ρ_max</span> = 1000 kg/m³ — הצפיפות הגבוהה ביותר של מים נוזליים</li>
+              <li><span class="sym">ρ_ice</span> = 917 kg/m³ — קרח פחות צפוף ממים נוזליים → קרח צף!</li>
+              <li><span class="sym">אנומליה</span> רוב החומרים: ↓T → ↑ρ. מים: ↓T&lt;4° → ↓ρ</li>
+            </ul>
+          </div>
+          <div class="blk blk-int">
+            <div class="blk-lbl">💡 הסבר אינטואיטיבי</div>
+            <p>מים הם יוצאי דופן: כשמתקררים מ-15 ל-4°C — הצפיפות <em>עולה</em> כרגיל. אך מ-4 ל-0°C — מולקולות המים מתארגנות במבנה גבישי ריק (קרח) → נפח גדל → צפיפות <em>יורדת</em>. לכן קרח צף, ואגמים קופאים מלמעלה — מה שמגן על חיים מתחת לפני הקרח.</p>
+            <div class="tip"><span class="tip-icon">🧊</span>זיכרון: <strong>4°C = שיא הצפיפות</strong>. כל קירור מ-15° ל-4°C → צפיפות עולה. כל קירור מ-4° ל-0°C → צפיפות יורדת.</div>
+          </div>
+        </div>
+      </article>
+
+      <!-- ─── CARD 42: Charles's Law ─────────────────────────── -->
+      <article class="card" id="card42">
+        <div class="card-hd" onclick="toggleCard('card42')">
+          <div class="card-num">42</div>
+          <div class="card-hd-text">
+            <div class="card-title">חוק שארל — חימום גז בלחץ קבוע</div>
+            <div class="card-eng">Charles's Law (Constant Pressure)</div>
+          </div>
+          <div class="card-chevron">▾</div>
+        </div>
+        <div class="card-body" id="card42-body">
+          <div class="blk blk-id">
+            <div class="blk-lbl">🔍 איך מזהים במבחן?</div>
+            <p>שאלה על גז ש<strong>מחממים בלחץ קבוע</strong> ושואלים מה קורה לנפח. מילות מפתח: "heated under constant pressure", "What happens to the volume", "The volume rises". תשובה: <strong>נפח עולה</strong> פרופורציונלית לטמפרטורה (בקלוין!).</p>
+          </div>
+          <div class="blk blk-formula">
+            <div class="blk-lbl">📏 נוסחה</div>
+            <div class="formula-box">V / T = constant       (P = const)</div>
+            <div class="formula-box">V₁ / T₁ = V₂ / T₂     (T in Kelvin!)</div>
+            <div class="formula-box">T(K) = T(°C) + 273</div>
+          </div>
+          <div class="blk blk-vars">
+            <div class="blk-lbl">📖 מקרא משתנים</div>
+            <ul class="vars-list">
+              <li><span class="sym">V</span> נפח הגז (ליטר / מ³)</li>
+              <li><span class="sym">T</span> טמפרטורה — <em>חייב להיות בקלוין!</em> 0°C = 273K</li>
+              <li><span class="sym">P</span> לחץ — קבוע בחוק שארל (מיכל פתוח / פיסטון חופשי)</li>
+              <li><span class="sym">יחס ישר</span> V ∝ T (בקלוין) — כפול T → כפול V</li>
+            </ul>
+          </div>
+          <div class="blk blk-int">
+            <div class="blk-lbl">💡 הסבר אינטואיטיבי</div>
+            <p>חימום גז נותן למולקולות יותר אנרגיה קינטית — הן נעות מהר יותר, מתנגשות חזק יותר בדפנות, ו"דוחפות" אותן החוצה. בלחץ קבוע (מיכל עם פיסטון נע) — הן <em>יכולות</em> לדחוף → נפח גדל. <strong>כלל האצבע</strong>: כל עלייה של 1°C = עלייה של 1/273 ≈ 0.37% בנפח.</p>
+            <div class="tip"><span class="tip-icon">🌡️</span>אל תשכח! 0°C ≠ 0K. חוק שארל דורש קלוין בלבד. כפל טמפ' ב-°C הוא שגיאה קריטית.</div>
+          </div>
+        </div>
+      </article>
+
+      <!-- ─── CARD 43: Fresh vs Salt Water Immersion ─────────── -->
+      <article class="card" id="card43">
+        <div class="card-hd" onclick="toggleCard('card43')">
+          <div class="card-num">43</div>
+          <div class="card-hd-text">
+            <div class="card-title">עומק שיקוע — מים מתוקים מול מלוחים</div>
+            <div class="card-eng">Depth of Immersion: Fresh vs. Salt Water</div>
+          </div>
+          <div class="card-chevron">▾</div>
+        </div>
+        <div class="card-body" id="card43-body">
+          <div class="blk blk-id">
+            <div class="blk-lbl">🔍 איך מזהים במבחן?</div>
+            <p>שאלה על <strong>ספינה או גוף צף שעובר ממים מלוחים למתוקים</strong> (או להפך). מילות מפתח: "bigger depth of immersion", "Sweet water", "Salt water". תשובה: <strong>במים מתוקים השיקוע עמוק יותר</strong>.</p>
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:8px">
+              <div style="background:rgba(59,130,246,.08);border:1px solid rgba(59,130,246,.25);border-radius:8px;padding:10px;text-align:center">
+                <div style="font-size:11px;font-weight:800;color:#1d4ed8;margin-bottom:4px">🌊 מים מלוחים</div>
+                <div style="font-family:monospace;font-size:10px;color:#1e3a8a">ρ ≈ 1025 kg/m³<br>שיקוע <strong>רדוד</strong><br>ספינה גבוהה יותר</div>
+              </div>
+              <div style="background:rgba(34,197,94,.08);border:1px solid rgba(34,197,94,.25);border-radius:8px;padding:10px;text-align:center">
+                <div style="font-size:11px;font-weight:800;color:#14532d;margin-bottom:4px">🏞️ מים מתוקים</div>
+                <div style="font-family:monospace;font-size:10px;color:#166534">ρ = 1000 kg/m³<br>שיקוע <strong>עמוק</strong><br>ספינה נמוכה יותר</div>
+              </div>
+            </div>
+          </div>
+          <div class="blk blk-formula">
+            <div class="blk-lbl">📏 נוסחה</div>
+            <div class="formula-box">Float: m_ship = ρ_fluid × V_submerged × ... </div>
+            <div class="formula-box">V_sub = m_ship / ρ_fluid</div>
+            <div class="formula-box">ρ_salt &gt; ρ_fresh  →  V_sub(salt) &lt; V_sub(fresh)</div>
+          </div>
+          <div class="blk blk-vars">
+            <div class="blk-lbl">📖 מקרא משתנים</div>
+            <ul class="vars-list">
+              <li><span class="sym">ρ_salt</span> ≈ 1025 kg/m³ — ים, מי שפיצה</li>
+              <li><span class="sym">ρ_fresh</span> = 1000 kg/m³ — נהר, אגם</li>
+              <li><span class="sym">V_sub</span> נפח הגוף מתחת לפני הנוזל — גדל בנוזל קל יותר</li>
+              <li><span class="sym">m_ship</span> מסת הספינה — קבועה, לא משתנה</li>
+            </ul>
+          </div>
+          <div class="blk blk-int">
+            <div class="blk-lbl">💡 הסבר אינטואיטיבי</div>
+            <p>ים המלח (ρ≈1240 kg/m³) — צפים בקלות רבה, הגוף שוקע מעט. מים מתוקים — פחות צפופים, צריך לדחוק יותר נפח לקבלת אותו כוח ציפוי. ספינות שנכנסות מהים לנמל נהרות ש<em>שוקעות מעט יותר</em> — זו ידיעה ותיקה של קציני ספינות.</p>
+            <div class="tip"><span class="tip-icon">⚓</span>כלל: מתוק = שיקוע עמוק יותר. מלוח = שיקוע רדוד יותר. ים המלח = שוקעים הכי מעט!</div>
+          </div>
+        </div>
+      </article>
+
+      <!-- ─── CARD 44: Terminal Velocity ────────────────────── -->
+      <article class="card" id="card44">
+        <div class="card-hd" onclick="toggleCard('card44')">
+          <div class="card-num">44</div>
+          <div class="card-hd-text">
+            <div class="card-title">מהירות סופית בנוזל צמיגי</div>
+            <div class="card-eng">Terminal Velocity in Viscous Fluid</div>
+          </div>
+          <div class="card-chevron">▾</div>
+        </div>
+        <div class="card-body" id="card44-body">
+          <div class="blk blk-id">
+            <div class="blk-lbl">🔍 איך מזהים במבחן?</div>
+            <p>שאלה שמתארת <strong>כדור שנופל בצינור מלא שמן</strong> — מאיץ בהתחלה ואז מגיע למהירות קבועה. מילות מפתח: "ball is dropped in a vertical tube filled with oil", "slows down and drops at constant speed". שואלים: "מה קורה לתאוצה כשמגיע למהירות קבועה?" — תשובה: <strong>אפס</strong>.</p>
+          </div>
+          <div class="blk blk-formula">
+            <div class="blk-lbl">📏 נוסחה</div>
+            <div class="formula-box">Terminal: mg = F_buoy + F_drag</div>
+            <div class="formula-box">F_drag = 6πηrv     (Stokes, for sphere)</div>
+            <div class="formula-box">v_t = 2r²(ρ_ball - ρ_fluid)g / (9η)</div>
+          </div>
+          <div class="blk blk-vars">
+            <div class="blk-lbl">📖 מקרא משתנים</div>
+            <ul class="vars-list">
+              <li><span class="sym">v_t</span> מהירות סופית (Terminal Velocity) — קבועה, אין תאוצה</li>
+              <li><span class="sym">η</span> צמיגות הנוזל (Pa·s) — שמן: גבוהה, מים: נמוכה יותר</li>
+              <li><span class="sym">r</span> רדיוס הכדור (מ')</li>
+              <li><span class="sym">F_drag</span> כוח גרר — גדל עם המהירות</li>
+              <li><span class="sym">F_buoy</span> כוח ציפוי — קבוע (תלוי בנפח הכדור)</li>
+            </ul>
+          </div>
+          <div class="blk blk-int">
+            <div class="blk-lbl">💡 הסבר אינטואיטיבי</div>
+            <p>בנפילה: כבידה מושכת מטה (קבועה), גרר וציפוי דוחפים מעלה (גרר גדל עם מהירות). ככל שהכדור מהיר יותר — הגרר גדל. <strong>בנקודת המהירות הסופית</strong>: כבידה = ציפוי + גרר → תאוצה = 0 → מהירות קבועה. כמו צנחן שנפרשת לו המצנח.</p>
+            <div class="tip"><span class="tip-icon">🎳</span>מהירות סופית: תאוצה = 0, מהירות קבועה ≠ 0. הכדור ממשיך לנוע אך לא מאיץ!</div>
+          </div>
+        </div>
+      </article>
+
+      <!-- ─── CARD 45: Melting Anchored Ice ─────────────────── -->
+      <article class="card" id="card45">
+        <div class="card-hd" onclick="toggleCard('card45')">
+          <div class="card-num">45</div>
+          <div class="card-hd-text">
+            <div class="card-title">המסת קרח מעוגן לקרקעית</div>
+            <div class="card-eng">Melting Anchored (Fixed) Ice</div>
+          </div>
+          <div class="card-chevron">▾</div>
+        </div>
+        <div class="card-body" id="card45-body">
+          <div class="blk blk-id">
+            <div class="blk-lbl">🔍 איך מזהים במבחן?</div>
+            <p>גרסה שונה מהשאלה הרגילה על קרח! מילות מפתח: "ice melts", "Temperature of water is 2 °C", "anchored/fixed to the bottom", "water level sinks". שאלה: "מה יקרה למפלס?" — תשובה: <strong>יירד</strong> (הפוך מקרח צף!).</p>
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:8px">
+              <div style="background:rgba(59,130,246,.08);border:1px solid rgba(59,130,246,.25);border-radius:8px;padding:10px;text-align:center">
+                <div style="font-size:11px;font-weight:800;color:#1d4ed8;margin-bottom:4px">🧊 קרח צף (כרטיס 32)</div>
+                <div style="font-size:11px;color:#1e3a8a">דוחק מים = משקלו<br>נמס → <strong>מפלס לא משתנה</strong></div>
+              </div>
+              <div style="background:rgba(239,68,68,.08);border:1px solid rgba(239,68,68,.25);border-radius:8px;padding:10px;text-align:center">
+                <div style="font-size:11px;font-weight:800;color:#991b1b;margin-bottom:4px">⚓ קרח מעוגן</div>
+                <div style="font-size:11px;color:#b91c1c">דוחק נפחו הפיזי<br>נמס → <strong>מפלס יורד!</strong></div>
+              </div>
+            </div>
+          </div>
+          <div class="blk blk-formula">
+            <div class="blk-lbl">📏 נוסחה</div>
+            <div class="formula-box">V_displaced = V_ice = m / ρ_ice</div>
+            <div class="formula-box">V_melt_water = m / ρ_water  &lt;  V_ice</div>
+            <div class="formula-box">ΔV = m(1/ρ_ice - 1/ρ_water) = m(1/917 - 1/1000) &gt; 0</div>
+          </div>
+          <div class="blk blk-vars">
+            <div class="blk-lbl">📖 מקרא משתנים</div>
+            <ul class="vars-list">
+              <li><span class="sym">V_ice</span> נפח הקרח הפיזי — גדול מהמים המתאימים</li>
+              <li><span class="sym">V_melt</span> נפח המים לאחר ההמסה — קטן יותר!</li>
+              <li><span class="sym">ΔV</span> הפרש נפחים — חיובי → מפלס יורד</li>
+              <li><span class="sym">מעוגן</span> קרח קשור לקרקעית → דוחק נפח פיזי, לא משקל</li>
+              <li><span class="sym">2°C</span> הגדרה: המים קרים — לא מתחממים, קרח אמיתי נמס</li>
+            </ul>
+          </div>
+          <div class="blk blk-int">
+            <div class="blk-lbl">💡 הסבר אינטואיטיבי</div>
+            <p>קרח מעוגן לקרקעית לא יכול לצוף — לכן הוא דוחק <em>נפחו הפיזי המלא</em> מהנוזל. כשנמס, הופך למים שנפחם קטן יותר (ρ_water > ρ_ice). הנפח שנוצר קטן מהנפח שנדחק → <strong>מפלס יורד</strong>. ההפרש: 1 ק"ג קרח = 1/917 L ≈ 1.09L, ב-1 ק"ג מים = 1L.</p>
+            <div class="tip"><span class="tip-icon">⚓</span>זיכרון: <strong>צף → מפלס יציב</strong>. <strong>מעוגן → מפלס יורד בהמסה</strong>. ההיגיון: קרח מעוגן "גוזל" נפח שמים נוזליים לא היו גוזלים.</div>
+          </div>
+        </div>
+      </article>
+
+      <!-- ─── CARD 46: Boyle's Law ───────────────────────────── -->
+      <article class="card" id="card46">
+        <div class="card-hd" onclick="toggleCard('card46')">
+          <div class="card-num">46</div>
+          <div class="card-hd-text">
+            <div class="card-title">חוק בויל — דחיסת גז</div>
+            <div class="card-eng">Boyle's Law (Isothermal Compression)</div>
+          </div>
+          <div class="card-chevron">▾</div>
+        </div>
+        <div class="card-body" id="card46-body">
+          <div class="blk blk-id">
+            <div class="blk-lbl">🔍 איך מזהים במבחן?</div>
+            <p>שאלה שנותנת <strong>גז בנפח מסוים ולחץ ידוע</strong>, ואז מחצה (או משנה) את הנפח ושואל על הלחץ החדש. מילות מפתח: "volume in basin 2 is half of the volume", "pressure", "4 bar". טמפרטורה קבועה (isothermal).</p>
+          </div>
+          <div class="blk blk-formula">
+            <div class="blk-lbl">📏 נוסחה</div>
+            <div class="formula-box">P₁ × V₁ = P₂ × V₂     (T = const)</div>
+            <div class="formula-box">V₂ = V₁/2  →  P₂ = 2 × P₁</div>
+            <div class="formula-box">P × V = nRT = constant  (fixed n, T)</div>
+          </div>
+          <div class="blk blk-vars">
+            <div class="blk-lbl">📖 מקרא משתנים</div>
+            <ul class="vars-list">
+              <li><span class="sym">P₁, P₂</span> לחצים לפני ואחרי השינוי (בר / אטמ / פסקל)</li>
+              <li><span class="sym">V₁, V₂</span> נפחים לפני ואחרי השינוי (ליטר / מ³)</li>
+              <li><span class="sym">T</span> טמפרטורה — <strong>חייב להיות קבוע</strong> לחוק בויל</li>
+              <li><span class="sym">יחס הפוך</span> P ∝ 1/V — הכפל V → חלק P, חלק V → הכפל P</li>
+            </ul>
+          </div>
+          <div class="blk blk-int">
+            <div class="blk-lbl">💡 הסבר אינטואיטיבי</div>
+            <p>דחיסת גז לחצי נפח = כל אותן מולקולות בחצי המקום → מתנגשות בדפנות פי שניים בשנייה → לחץ כפול. הכפלת נפח — מולקולות מתנגשות בחצי תדירות → לחץ חצי. <strong>P × V = קבוע</strong> כל עוד T וכמות הגז לא משתנים.</p>
+            <div class="tip"><span class="tip-icon">🔵</span>חישוב: 2 בר × 4 ליטר = ? → 8 ליטר·בר = קבוע. אם V=2L → P=4 בר. פשוט כפל צולב.</div>
+          </div>
+        </div>
+      </article>
+
+      <!-- ─── CARD 47: Balloon in Vacuum ────────────────────── -->
+      <article class="card" id="card47">
+        <div class="card-hd" onclick="toggleCard('card47')">
+          <div class="card-num">47</div>
+          <div class="card-hd-text">
+            <div class="card-title">בלון גז בוואקום</div>
+            <div class="card-eng">Balloon in a Vacuum Container</div>
+          </div>
+          <div class="card-chevron">▾</div>
+        </div>
+        <div class="card-body" id="card47-body">
+          <div class="blk blk-id">
+            <div class="blk-lbl">🔍 איך מזהים במבחן?</div>
+            <p>שאלה: <strong>בלון נמצא בתוך מיכל — שואבים ממנו אוויר — מה קורה לבלון?</strong> מילות מפתח: "Air is removed from the container", "How will the balloon respond", "It expands". תשובה: <strong>הבלון מתנפח (מתרחב)</strong>.</p>
+            <div style="background:rgba(168,85,247,.06);border:1px solid rgba(168,85,247,.2);border-radius:8px;padding:12px;margin-top:8px;direction:ltr;text-align:center;font-family:monospace;font-size:11px;color:#4c1d95">
+              Before: P_ext = 1 atm  [🎈 small]<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;P_int = 1.1 atm<br>
+              ────────────────────────────────<br>
+              Pump air OUT:  P_ext → 0<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;P_int &gt;&gt; P_ext<br>
+              Result: [&nbsp;&nbsp;&nbsp;🎈 BIG&nbsp;&nbsp;&nbsp;] EXPANDS ↑
+            </div>
+          </div>
+          <div class="blk blk-formula">
+            <div class="blk-lbl">📏 נוסחה</div>
+            <div class="formula-box">P_int × V_int = constant   (Boyle, T fixed)</div>
+            <div class="formula-box">P_ext decreases  →  V_balloon increases</div>
+            <div class="formula-box">Net force on balloon wall = P_int - P_ext  (outward)</div>
+          </div>
+          <div class="blk blk-vars">
+            <div class="blk-lbl">📖 מקרא משתנים</div>
+            <ul class="vars-list">
+              <li><span class="sym">P_ext</span> לחץ חיצוני על הבלון — יורד ככל ששואבים אוויר</li>
+              <li><span class="sym">P_int</span> לחץ הגז בתוך הבלון — גורם להתנפחות</li>
+              <li><span class="sym">V_balloon</span> נפח הבלון — גדל ככל ש-P_ext קטן</li>
+            </ul>
+          </div>
+          <div class="blk blk-int">
+            <div class="blk-lbl">💡 הסבר אינטואיטיבי</div>
+            <p>הלחץ הפנימי של הגז בבלון תמיד "מנסה" להרחיב אותו. הלחץ החיצוני של האוויר "מונע" זאת. כשמסירים את האוויר החיצוני — הלחץ הפנימי גובר ודוחף את דפנות הבלון החוצה. בוואקום מוחלט — הבלון יתרחב עד שידפנות יגיעו ל<em>גבול קריעה</em>.</p>
+            <div class="tip"><span class="tip-icon">🎈</span>היפך אינטואיטיבי: "שאיבת אוויר החוצה" → הבלון מתנפח, לא מכווץ. כי האוויר שנשאב הוא ה<em>חיצוני</em>, לא הפנימי.</div>
+          </div>
+        </div>
+      </article>
+
+      <!-- ─── CARD 48: Gas Thermoscope ──────────────────────── -->
+      <article class="card" id="card48">
+        <div class="card-hd" onclick="toggleCard('card48')">
+          <div class="card-num">48</div>
+          <div class="card-hd-text">
+            <div class="card-title">תרמוסקופ גז</div>
+            <div class="card-eng">Gas Thermoscope</div>
+          </div>
+          <div class="card-chevron">▾</div>
+        </div>
+        <div class="card-body" id="card48-body">
+          <div class="blk blk-id">
+            <div class="blk-lbl">🔍 איך מזהים במבחן?</div>
+            <p>שאלה שמתארת <strong>כלי עם בועת זכוכית עגולה בראש וצינור נוזל</strong>. שאלה: "מה יקרה כשמקיפים את הבועה ביד?" מילות מפתח: "upper end is surrounded by a hand", "liquid flows down". תשובה: <strong>הנוזל ירד בצינור</strong>.</p>
+            <div style="background:rgba(245,158,11,.06);border:1px solid rgba(245,158,11,.2);border-radius:8px;padding:12px;margin-top:8px;direction:ltr;text-align:center;font-family:monospace;font-size:11px;color:#78350f">
+              &nbsp;&nbsp;&nbsp;&nbsp;( 🤚 hand warms )<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;[ glass bulb 🌡️ ]<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│ tube<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│ liquid level FALLS ↓<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;┌────┘<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│ reservoir
+            </div>
+          </div>
+          <div class="blk blk-formula">
+            <div class="blk-lbl">📏 נוסחה</div>
+            <div class="formula-box">P₁/T₁ = P₂/T₂        (Gay-Lussac, V = const)</div>
+            <div class="formula-box">T increases  →  P increases  →  pushes liquid down</div>
+            <div class="formula-box">OR: V increases (bulb expands) → liquid displaced</div>
+          </div>
+          <div class="blk blk-vars">
+            <div class="blk-lbl">📖 מקרא משתנים</div>
+            <ul class="vars-list">
+              <li><span class="sym">בועת זכוכית</span> מכילה אוויר כלוא — מתחמם על ידי חום הגוף</li>
+              <li><span class="sym">T</span> טמפרטורת האוויר בבועה — עולה עם חום היד</li>
+              <li><span class="sym">P</span> לחץ האוויר בבועה — עולה עם הטמפרטורה</li>
+              <li><span class="sym">עמוד נוזל</span> מהווה "סמן" — נע מטה כשלחץ/נפח עולה</li>
+            </ul>
+          </div>
+          <div class="blk blk-int">
+            <div class="blk-lbl">💡 הסבר אינטואיטיבי</div>
+            <p>חום הגוף מהיד מחמם את האוויר הכלוא בבועה. חוק גי-לוסק: חימום בנפח קבוע → לחץ עולה. הלחץ המוגבר דוחף את עמוד הנוזל בצינור <strong>כלפי מטה</strong> אל הכוס. זהו מד-חום ראשוני — ירידת הנוזל מייצגת עלייה בטמפרטורה.</p>
+            <div class="tip"><span class="tip-icon">🌡️</span>זהו עקרון מד-החום של גלילאו! חום הגוף (37°C) מועבר לאוויר → לחץ/נפח עולה → נוזל יורד. פשוט ויפה.</div>
+          </div>
+        </div>
+      </article>
+
+    </div><!-- /cards-grid ch8 -->
+  </section><!-- /chapter8 -->
+
 </main>
 
 <!-- ══════════════════════════════════════════════════════════
@@ -2641,6 +3558,82 @@
     card29: {
       kw: ['Blue shadow', 'Light red clouds', 'Deep red clouds'],
       tip: 'צל ביום בהיר הוא כחלחל — קרינת השמיים הכחולה המפוזרת מגיעה לצל גם כן. בשקיעה: עננים גבוהים = אדום כהה (נתיב ארוך, כל הכחול נפוזר). עננים נמוכים = אדום בהיר (נתיב קצר יותר, כתום שורד).'
+    },
+    card30: {
+      kw: ['Rigid bowls', 'refilled with helium', 'seesaw tip'],
+      tip: 'במיכלים קשיחים בעלי לחץ זהה, המיכל הגדול יותר (בעל הנפח הגדול) מכיל מסה גדולה יותר של גז, ולכן הוא יהיה כבד יותר ויכריע את המאזניים כלפי מטה.'
+    },
+    card31: {
+      kw: ['glass cover is vacuumed', 'water boils', 'temperature drops'],
+      tip: 'ירידת לחץ חיצוני מורידה דרסטית את נקודת הרתיחה וגורמת לרתיחה מיידית. תהליך הרתיחה הוא אנדותרמי - הוא שואב אנרגיה מהנוזל עצמו, ולכן הטמפרטורה צונחת.'
+    },
+    card32: {
+      kw: ['melting ice cube', 'water level remains constant'],
+      tip: 'קוביית קרח שצפה באופן חופשי בכוס מים דוחקת מים בדיוק במשקל שלה. כשהיא נמסה, היא מתכווצת בדיוק לנפח המים שהיא דחקה, ולכן מפלס המים הכללי לא משתנה.'
+    },
+    card33: {
+      kw: ['balloons can fly higher'],
+      tip: 'ככל שעולים בגובה, הלחץ האטמוספרי יורד והגז מתפשט. בלון בעל מעטפת רפויה יתרחב בבטחה ויוכל לטפס גבוה יותר, בעוד בלון מתוח יתפוצץ או ייאלץ לשחרר גז.'
+    },
+    card34: {
+      kw: ['How much pressure shows the manometer', 'kp/cm²'],
+      tip: 'שים לב ליחידות! חלוקה של הכוח (kp) בשטח הבוכנה (cm²) תיתן את הלחץ. במערכת בשיווי משקל הלחץ זהה בשני הצדדים, וזהו המספר שיראה מד הלחץ.'
+    },
+    card35: {
+      kw: ['Which heater generates more heat', 'radiator'],
+      tip: 'המכשיר בעל הצלעות (שטח פנים גדול) מפזר חום ביעילות לאוויר ולכן מונע התחממות יתר פנימית. כתוצאה מכך, התרמוסטט שלו לא מנתק אותו לעיתים תכופות, והוא מייצר בסך הכל יותר חום לאורך זמן.'
+    },
+    card36: {
+      kw: ['filled with gas', 'helium', 'xenon'],
+      tip: 'גז קל יותר (כמו הליום) בעל צפיפות נמוכה ייצר כוח ציפויי חזק יותר שידחוק את המים החוצה מהפעמון ויגרום לו לצוף גבוה יותר מחוץ לנוזל.'
+    },
+    card37: {
+      kw: ['glass cover is closed airtight', 'candle goes out first', 'The big candle'],
+      tip: 'גזי בעירה חמים (CO2) הם בעלי צפיפות נמוכה ולכן הם עולים מיד לתקרת הכלי המכוסה. משם הם מצטברים כלפי מטה, חונקים ראשית את הנר הגבוה ביותר, ורק אחר כך את הנמוך.'
+    },
+    card38: {
+      kw: ['floats on the water surface', 'floats in oil instead', 'More than half of the object is covered'],
+      tip: 'שמן פחות צפוף ממים. לכן, גוף שעובר ממים לשמן ייאלץ לשקוע עמוק יותר בתוך השמן (יותר מחצי מגופו) כדי לדחוק מספיק נוזל שיאזן את משקלו.'
+    },
+    card39: {
+      kw: ['1 kg of plumb', '1 l of water', 'heated', 'A lot less energy is needed for plumb'],
+      tip: 'למתכות כבדות יש קיבול חום סגולי נמוך מאוד ביחס למים. לכן, נדרשת הרבה פחות אנרגיה כדי להעלות את הטמפרטורה של גוש עופרת בהשוואה לכמות זהה של מים.'
+    },
+    card40: {
+      kw: ['1 liter water of 90 °C', '100 liter water of 5 °C', 'changes hardly'],
+      tip: 'כשמערבבים כמות זעירה של נוזל חם מאוד לתוך מסה אדירה של נוזל קר, האנרגיה מתפזרת כך שהטמפרטורה הכללית כמעט ולא תשתנה.'
+    },
+    card41: {
+      kw: ['cooled down from 15 °C to 1 °C', 'affect water density', 'increases first and decreases afterwards'],
+      tip: 'מים מתנהגים הפוך מרוב החומרים - הם מגיעים לצפיפות מקסימלית ב-4°C. קירור מ-15 מעלות יעלה את הצפיפות עד 4 מעלות, וקירור נוסף לכיוון הקיפאון ירחיב את המים ויוריד את צפיפותם.'
+    },
+    card42: {
+      kw: ['heated under constant pressure', 'What happens to the volume', 'The volume rises'],
+      tip: 'כאשר מחממים גז תחת לחץ קבוע, האנרגיה הקינטית של המולקולות עולה, מה שגורם להן להתרחק זו מזו ולהגדיל את הנפח הכללי.'
+    },
+    card43: {
+      kw: ['bigger depth of immersion', 'Sweet water', 'Salt water'],
+      tip: 'מים מלוחים הם צפופים וכבדים יותר. לכן, במים מתוקים (קלים יותר), אונייה או גוף צף ייאלצו לשקוע עמוק יותר כדי לדחוק מספיק נוזל הדרוש לציפה.'
+    },
+    card44: {
+      kw: ['ball is dropped in a vertical tube filled with oil', 'slows down and drops at constant speed'],
+      tip: 'בנפילה בתוך נוזל צמיגי, כוח התנגדות הגרר עולה עם המהירות. בשלב מסוים הוא משתווה בדיוק לכוח הכובד המושך מטה, התאוצה מתאפסת, והכדור ימשיך ליפול במהירות קבועה (מהירות סופית).'
+    },
+    card45: {
+      kw: ['ice melts', 'Temperature of water is 2 °C', 'anchored/fixed to the bottom', 'water level sinks'],
+      tip: 'בניגוד לקרח צף, קרח הקשור לקרקעית מאולץ לדחוק נוזל השווה למלוא נפחו הפיזי. כשהוא נמס בסביבה קרה, הוא מתכווץ לנפח קטן יותר של נוזל, ולכן מפלס המים הכללי יורד.'
+    },
+    card46: {
+      kw: ['volume in basin 2 is half of the volume', 'pressure', '4 bar'],
+      tip: 'קיים יחס הפוך בין נפח ללחץ (p * V = const). אם דוחסים גז לחצי מהנפח המקורי שלו, הלחץ שלו יזנק ויכפיל את עצמו בדיוק פי 2.'
+    },
+    card47: {
+      kw: ['Air is removed from the container', 'How will the balloon respond', 'It expands'],
+      tip: 'שאיבת אוויר מהמיכל מקטינה את הלחץ הסביבתי הפועל על הבלון מבחוץ. כתוצאה מכך, הלחץ הפנימי של הגז גובר ומנפח את הבלון כלפי חוץ.'
+    },
+    card48: {
+      kw: ['upper end is surrounded by a hand', 'liquid flows down'],
+      tip: 'חום הגוף מהיד עובר לבועת הזכוכית ומחמם את האוויר הכלוא בה. האוויר מתרחב, הלחץ הפנימי עולה, ודוחף את עמוד הנוזל שבצינור כלפי מטה אל הכוס.'
     }
   };
 
